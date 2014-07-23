@@ -1,0 +1,91 @@
+<!-- android:orientation="vertical"水平居中 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_newevent"
+    android:orientation="vertical" >
+
+    <!-- 主界面的标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dw_title_bg" >
+
+        <!-- 标题中间的内容 -->
+        <!-- wrap_content -->
+        <!-- android:layout_centerVertical="true"垂直居中 -->
+        <!-- android:layout_centerHorizontal="true"水平居中 -->
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/change_press_out"
+            android:onClick="uppage" />
+
+        <ImageButton
+            android:id="@+id/btnMenu_step"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/menu_btn_selector_bg" />
+
+        <TextView
+            android:id="@+id/textLoyinTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="明  细"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_background_newslist" >
+
+        <TextView
+            android:id="@+id/txtStep_step"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:hint="烙印详细信息显示"
+            android:textColor="#fff000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStep_step"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/imgDel_step"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtContent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/elete_press_out" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_step"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

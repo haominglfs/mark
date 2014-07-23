@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- mark_menu size -->
+    <dimen name="mark_menu_width">180dp</dimen>
+    <dimen name="mark_menu_height">111dp</dimen>
+
+    <!-- step_menu size -->
+    <dimen name="step_menu_width">180dp</dimen>
+    <dimen name="step_menu_height">35dp</dimen>
+
+</resources>

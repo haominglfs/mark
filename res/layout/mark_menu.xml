@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#cc6"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnCreateMark_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/createshijian_press_put"
+        android:textSize="15dp" 
+        android:onClick="btnCreateMark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#aaaaaa" />
+
+    <Button
+        android:id="@+id/btnUpdatePwd_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/modifymm_press_out"
+        android:textSize="15dp" 
+        android:onClick="btnUpdatePwd"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#aaaaaa" />
+
+    <Button
+        android:id="@+id/btnAbout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/bout_press_out"
+        android:textSize="15dp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#aaaaaa" />
+
+</LinearLayout>

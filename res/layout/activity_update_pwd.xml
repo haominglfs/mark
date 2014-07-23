@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_register" >
+
+    <ImageView
+        android:id="@+id/imgReturn_update_pwd"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/change_press_out" />
+
+    <EditText
+        android:id="@+id/txtOldPwd_update_pwd"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/imgReturn_update_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="65dp"
+        android:hint="旧密码"
+        android:inputType="textCapSentences"
+        android:isScrollContainer="true"
+        android:textSize="13dp" />
+
+    <EditText
+        android:id="@+id/txtPwd_update_pwd"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/txtOldPwd_update_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:hint="新密码"
+        android:inputType="textPassword"
+        android:isScrollContainer="true"
+        android:textSize="13dp" />
+
+    <EditText
+        android:id="@+id/txtAgainPwd_update_pwd"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/txtPwd_update_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:hint="确认新密码"
+        android:inputType="textPassword"
+        android:isScrollContainer="true"
+        android:textSize="13dp" />
+
+    <ImageButton
+        android:id="@+id/btnSubmit_update_pwd"
+        android:layout_width="204dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/txtAgainPwd_update_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_press_out" />
+
+    <ImageButton
+        android:id="@+id/btnCancel_update_pwd"
+        android:layout_width="204dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/btnSubmit_update_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cancle_press_out" />
+
+</RelativeLayout>

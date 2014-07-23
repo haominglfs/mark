@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_login" >
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mark" />
+
+    <ImageView
+        android:id="@+id/imgView_logo"
+        android:layout_width="160dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logo_03" />
+
+    <EditText
+        android:id="@+id/txtUname_login"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/imgView_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:hint="用户名"
+        android:inputType="textCapSentences"
+        android:textSize="13dp" />
+
+    <EditText
+        android:id="@+id/txtPwd_login"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/txtUname_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:isScrollContainer="true"
+        android:textSize="13dp" />
+    <!-- android:layout_marginTop="5dp" -->
+
+    <ImageButton
+        android:id="@+id/btnSubmit_login"
+        android:layout_width="204dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@+id/txtPwd_login"
+        android:layout_below="@+id/txtPwd_login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_press_out"
+        android:isScrollContainer="true" />
+
+    <ImageButton
+        android:id="@+id/btnRegister_login"
+        android:layout_width="204dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@+id/btnSubmit_login"
+        android:layout_below="@+id/btnSubmit_login"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/register_press_out" />
+
+</RelativeLayout>

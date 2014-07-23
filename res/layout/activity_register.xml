@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_register" >
+
+    <EditText
+        android:id="@+id/txtUname_register"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:hint="用户名"
+        android:textSize="13dp" />
+
+    <EditText
+        android:id="@+id/txtPwd_register"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/txtUname_register"
+        android:layout_centerHorizontal="true"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:textSize="13dp" />
+
+    <EditText
+        android:id="@+id/txtAginPwd_register"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/txtPwd_register"
+        android:layout_centerHorizontal="true"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:textSize="13dp" />
+
+    <ImageButton
+        android:id="@+id/btnSubmit_register"
+        android:layout_width="204dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/txtAginPwd_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_press_out" />
+
+    <ImageButton
+        android:id="@+id/btnCancel_register"
+        android:layout_width="204dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/btnSubmit_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cancle_press_out" />
+
+    <ImageButton
+        android:id="@+id/btnReturn_register"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/re_press_out" />
+
+</RelativeLayout>
